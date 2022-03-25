@@ -36,17 +36,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://underarmour.my.salesforce.com',
-			'https://underarmour-site.secure.force.com',
+			'https://underarmour--sfscdev.my.salesforce.com',
+			'https://sfscdev-underarmour.cs214.force.com/POC3',
 			gslbBaseURL,
-			'00D6g000005jfl0',
-			'Chat_UK_English',
+			'00D790000008fkB',
+			'Chat_Canada_English',
 			{
-				baseLiveAgentContentURL: 'https://c.la2-c1-ia4.salesforceliveagent.com/content',
-				deploymentId: '5724V000000TXB1',
-				buttonId: '5734V000000TXCH',
-				baseLiveAgentURL: 'https://d.la2-c1-ia4.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I4V000000CestUAC_17f94819fc2',
+				baseLiveAgentContentURL: 'https://c.la5-c1cs-ia5.salesforceliveagent.com/content',
+				deploymentId: '57279000000CaRR',
+				buttonId: '57379000000Gmad',
+				baseLiveAgentURL: 'https://d.la5-c1cs-ia5.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I790000004CB4EAM_17dd7db65d3',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -54,7 +54,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://underarmour.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://underarmour--sfscdev.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
